@@ -794,6 +794,9 @@
         </span>
         <!-- <video controls autoplay id="Video" src="images/video.mp4"></video> -->
     </div>
+
+    <!-- Main modal -->
+
     <div id="modal" class="modal">
         <div class="modal-content">
             <span class="menu-close">
@@ -835,66 +838,74 @@
                     agrobiznes z <br>Targi Destek
                 </p>
             </div>
+
+            <!-- LEAD FROM START -->
+
             <form class="form _main-form ui-form col-12 header-form" id="main-form" method="post" action="success.php">
-                <!-- <input type="hidden" name="user_id" value="{user_id}"> -->
                 <h3>Wypełnić formularz</h3>
                 <div class="header-input-box">
- <div class="form-group input-group input-group--name input-box">
-     <label for="name">Nazwa</label>
-    <input class="form-control form-input input is-large" name="name" placeholder=""  type="text" />
-    <i class="fa__err"></i>
-    <span class="fa__errInfo">- Wprowadź w określonym formacie<br> - Imię i nazwisko nie mogą być takie same</span>
-        <i class="fa__checked"></i>
+                    <div class="form-group input-group input-group--name input-box">
+                        <label for="name">Nazwa</label>
+                        <input class="form-control form-input input is-large" name="name" placeholder="" type="text" />
+                        <i class="fa__err"></i>
+                        <span class="fa__errInfo">- Wprowadź w określonym formacie<br> - Imię i nazwisko nie mogą być
+                            takie same</span>
+                        <i class="fa__checked"></i>
 
-</div>
-  <div class="form-group input-group input-group--name input-box">
-    <label for="surname">Nazwisko</label>
-    <input class="form-control  form-input input is-large" name="last_name" placeholder=""  type="text" />
-    <i class="fa__err"></i>
-    <span class="fa__errInfo">- Wprowadź w określonym formacie<br> - Imię i nazwisko nie mogą być takie same</span>
-    <i class="fa__checked"></i> 
+                    </div>
+                    <div class="form-group input-group input-group--name input-box">
+                        <label for="surname">Nazwisko</label>
+                        <input class="form-control  form-input input is-large" name="last_name" placeholder=""
+                            type="text" />
+                        <i class="fa__err"></i>
+                        <span class="fa__errInfo">- Wprowadź w określonym formacie<br> - Imię i nazwisko nie mogą być
+                            takie same</span>
+                        <i class="fa__checked"></i>
 
-    </div>
+                    </div>
 
-  <div class="form-group input-group input-group--email input-box w-100">
-    <label for="email">E-mail</label>
-    <input class="form-control input is-large" name="email" 
-      placeholder="" type="text" />
-      <i class="fa__err"></i>
-      <span class="fa__errInfo">- Wprowadź w określonym formacie<br> - example@gmail.com</span>
-      <i class="fa__checked"></i> 
+                    <div class="form-group input-group input-group--email input-box w-100">
+                        <label for="email">E-mail</label>
+                        <input class="form-control input is-large" name="email" placeholder="" type="text" />
+                        <i class="fa__err"></i>
+                        <span class="fa__errInfo">- Wprowadź w określonym formacie<br> - example@gmail.com</span>
+                        <i class="fa__checked"></i>
 
-  </div>
+                    </div>
 
-  <div class="form-group input-group input-box w-100">
-    <label for="phone">Numer telefonu</label>
-    <input class="form-control form-input input is-large _phone"  name="phone" type="tel" />  
-    <span class="phone-eror-mess"></span>
-  </div>
-  </div>
-  <span class="form-error-content">zły numer</span>
-  <input name="code" type="hidden" value="" />
-  <input type="hidden" name="subid" class="js-inputSubid">
-  <input type="hidden" name="answer">
-  
-  	<input name="areacode" type="hidden" value="" />
+                    <div class="form-group input-group input-box w-100">
+                        <label for="phone">Numer telefonu</label>
+                        <input class="form-control form-input input is-large _phone" name="phone" type="tel" />
+                        <span class="phone-eror-mess"></span>
+                    </div>
+                </div>
+                <span class="form-error-content">zły numer</span>
+                <input name="code" type="hidden" value="" />
+                <input type="hidden" name="subid" class="js-inputSubid">
+                <input type="hidden" name="answer">
 
-  <div class="form-group">
-  
-    <button class="btn btn-block button lead-form__button is-outline buttonSend lead-form__button form-button"  name="submitBtn" type="submit">
+                <input name="areacode" type="hidden" value="" />
 
-    <span>Zacznij zarabiać pieniądze</span>
-    </button>
-  </div>
-  <div class="user-policy-box d-flex px-5 pt-3">
+                <div class="form-group">
+
+                    <button
+                        class="btn btn-block button lead-form__button is-outline buttonSend lead-form__button form-button"
+                        name="submitBtn" type="submit">
+
+                        <span>Zacznij zarabiać pieniądze</span>
+                    </button>
+                </div>
+                <div class="user-policy-box d-flex px-5 pt-3">
                     <input type="checkbox" name="checkbox" required="" checked="">
                     <p class="user-policy">Wyrażam zgodę na gromadzenie mojego adresu e-mail w celu otrzymywania
                         ofert handlowych, które naszym zdaniem będą dla Ciebie interesujące, w imieniu firm i
                         branżach zgodnie z naszymi Warunkami użytkowania i Polityką prywatności.</p>
                 </div>
             </form>
+
         </div>
     </div>
+
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
@@ -905,8 +916,8 @@
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
-    <script type="module" src="./form/js/libs.js"></script>
-    <script type="module" src="./form/js/main-form.js"></script>
+    <!-- <script type="module" src="./form/js/libs.js"></script> -->
+    <!-- <script type="module" src="./form/js/main-form.js"></script> -->
 </body>
 
 </html>

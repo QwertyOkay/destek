@@ -11,66 +11,68 @@ export function validPhoneNumber(arr, placeholderCol) { for (let i = 0; i < arr.
 export const generationsCustomPassword = () => {
   const chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ"; const passwordLength = 7; let password = ""; for (let i = 0; i <= passwordLength; i++) { const randomNumber = Math.floor(Math.random() * chars.length); password += chars.substring(randomNumber, randomNumber + 1); }
   return password;
-}; export function renderFormRegistrations(allFormClass) {
-  const forms = document.querySelectorAll(`.${allFormClass}`); const htmlFormHtml = `
+};
+
+// export function renderFormRegistrations(allFormClass) {
+//   const forms = document.querySelectorAll(`.${allFormClass}`); const htmlFormHtml = `
   
-  <div class="header-input-box">
- <div class="form-group input-group input-group--name input-box">
-     <label for="name">Nazwa</label>
-    <input class="form-control form-input input is-large" name="name" placeholder=""  type="text" />
-    <i class="fa__err"></i>
-    <span class="fa__errInfo">- Wprowadź w określonym formacie<br> - Imię i nazwisko nie mogą być takie same</span>
-        <i class="fa__checked"></i>
+//   <div class="header-input-box">
+//  <div class="form-group input-group input-group--name input-box">
+//      <label for="name">Nazwa</label>
+//     <input class="form-control form-input input is-large" name="name" placeholder=""  type="text" />
+//     <i class="fa__err"></i>
+//     <span class="fa__errInfo">- Wprowadź w określonym formacie<br> - Imię i nazwisko nie mogą być takie same</span>
+//         <i class="fa__checked"></i>
 
-</div>
-  <div class="form-group input-group input-group--name input-box">
-    <label for="surname">Nazwisko</label>
-    <input class="form-control  form-input input is-large" name="last_name" placeholder=""  type="text" />
-    <i class="fa__err"></i>
-    <span class="fa__errInfo">- Wprowadź w określonym formacie<br> - Imię i nazwisko nie mogą być takie same</span>
-    <i class="fa__checked"></i> 
+// </div>
+//   <div class="form-group input-group input-group--name input-box">
+//     <label for="surname">Nazwisko</label>
+//     <input class="form-control  form-input input is-large" name="last_name" placeholder=""  type="text" />
+//     <i class="fa__err"></i>
+//     <span class="fa__errInfo">- Wprowadź w określonym formacie<br> - Imię i nazwisko nie mogą być takie same</span>
+//     <i class="fa__checked"></i> 
 
-    </div>
+//     </div>
 
-  <div class="form-group input-group input-group--email input-box w-100">
-    <label for="email">E-mail</label>
-    <input class="form-control input is-large" name="email" 
-      placeholder="" type="text" />
-      <i class="fa__err"></i>
-      <span class="fa__errInfo">- Wprowadź w określonym formacie<br> - example@gmail.com</span>
-      <i class="fa__checked"></i> 
+//   <div class="form-group input-group input-group--email input-box w-100">
+//     <label for="email">E-mail</label>
+//     <input class="form-control input is-large" name="email" 
+//       placeholder="" type="text" />
+//       <i class="fa__err"></i>
+//       <span class="fa__errInfo">- Wprowadź w określonym formacie<br> - example@gmail.com</span>
+//       <i class="fa__checked"></i> 
 
-  </div>
+//   </div>
 
-  <div class="form-group input-group input-box w-100">
-    <label for="phone">Numer telefonu</label>
-    <input class="form-control form-input input is-large _phone"  name="phone" type="tel" />  
-    <span class="phone-eror-mess"></span>
-  </div>
-  </div>
-  <span class="form-error-content">zły numer</span>
-  <input name="code" type="hidden" value="" />
-  <input type="hidden" name="subid" class="js-inputSubid">
-  <input type="hidden" name="answer">
+//   <div class="form-group input-group input-box w-100">
+//     <label for="phone">Numer telefonu</label>
+//     <input class="form-control form-input input is-large _phone"  name="phone" type="tel" />  
+//     <span class="phone-eror-mess"></span>
+//   </div>
+//   </div>
+//   <span class="form-error-content">zły numer</span>
+//   <input name="code" type="hidden" value="" />
+//   <input type="hidden" name="subid" class="js-inputSubid">
+//   <input type="hidden" name="answer">
   
-  	<input name="areacode" type="hidden" value="" />
+//   	<input name="areacode" type="hidden" value="" />
 
-  <div class="form-group">
+//   <div class="form-group">
   
-    <button class="btn btn-block button lead-form__button is-outline buttonSend lead-form__button form-button"  name="submitBtn" type="submit">
+//     <button class="btn btn-block button lead-form__button is-outline buttonSend lead-form__button form-button"  name="submitBtn" type="submit">
 
-    <span>Zacznij zarabiać pieniądze</span>
-    </button>
-  </div>
-  <div class="user-policy-box d-flex px-5 pt-3">
-                    <input type="checkbox" name="checkbox" required="" checked="">
-                    <p class="user-policy">Wyrażam zgodę na gromadzenie mojego adresu e-mail w celu otrzymywania
-                        ofert handlowych, które naszym zdaniem będą dla Ciebie interesujące, w imieniu firm i
-                        branżach zgodnie z naszymi Warunkami użytkowania i Polityką prywatności.</p>
-                </div>
+//     <span>Zacznij zarabiać pieniądze</span>
+//     </button>
+//   </div>
+//   <div class="user-policy-box d-flex px-5 pt-3">
+//                     <input type="checkbox" name="checkbox" required="" checked="">
+//                     <p class="user-policy">Wyrażam zgodę na gromadzenie mojego adresu e-mail w celu otrzymywania
+//                         ofert handlowych, które naszym zdaniem będą dla Ciebie interesujące, w imieniu firm i
+//                         branżach zgodnie z naszymi Warunkami użytkowania i Polityką prywatności.</p>
+//                 </div>
 
-      `; forms.forEach((form, index) => { form.insertAdjacentHTML("beforeend", htmlFormHtml); });
-}
+//       `; forms.forEach((form, index) => { form.insertAdjacentHTML("beforeend", htmlFormHtml); });
+// }
 
 export function generationsModalErrors() {
   const html = `
